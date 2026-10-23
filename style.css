@@ -222,20 +222,26 @@ strong { font-weight: 600; color: var(--ink); }
 
 /* Espaço */
 .place { background: var(--pink-100); }
-.place__card { display: grid; grid-template-columns: 1fr 1.2fr; background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
-.place__info { padding: 60px 56px; }
-.place__info h3 { font-size: 2.4rem; text-transform: uppercase; margin-bottom: 30px; }
-.place__info ul { list-style: none; display: grid; gap: 24px; margin-bottom: 40px; }
-.place__info li { display: flex; gap: 18px; align-items: flex-start; }
-.place__info li svg { width: 46px; height: 46px; flex-shrink: 0; padding: 11px; border-radius: 50%; background: var(--pink-100); fill: none; stroke: var(--pink-600); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
-.place__info small { color: var(--pink-600); font-weight: 500; font-size: .9rem; }
-.place__info a:hover { color: var(--pink-600); }
+.place__card {
+  display: grid; grid-template-columns: .9fr 1.1fr; align-items: stretch;
+  background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow);
+  max-width: 1080px; margin: 0 auto;
+}
+.place__photo { position: relative; min-height: 560px; }
+.place__photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; }
+.place__info { padding: 64px 60px; display: flex; flex-direction: column; justify-content: center; }
+.place__label { font-size: .75rem; font-weight: 500; letter-spacing: .32em; text-transform: uppercase; color: var(--pink-600); margin-bottom: 10px; }
+.place__info h3 { font-size: 2.5rem; text-transform: uppercase; margin-bottom: 14px; }
+.place__intro { margin-bottom: 34px; max-width: 420px; }
+.place__items { display: grid; border-top: 1px solid var(--pink-200); margin-bottom: 38px; }
+.place__item { display: flex; gap: 20px; align-items: flex-start; padding: 22px 0; border-bottom: 1px solid var(--pink-200); }
+.place__item svg { width: 48px; height: 48px; flex-shrink: 0; padding: 12px; border-radius: 50%; background: var(--pink-100); fill: none; stroke: var(--pink-600); stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.place__item h4 { font-family: var(--sans); font-size: .75rem; font-weight: 600; letter-spacing: .22em; text-transform: uppercase; color: var(--ink); margin-bottom: 6px; }
+.place__item p { line-height: 1.55; }
+.place__item a { font-weight: 500; color: var(--ink); }
+.place__item a:hover { color: var(--pink-600); }
+.place__note { display: inline-block; margin-top: 8px; padding: 4px 12px; border-radius: 20px; background: var(--pink-100); color: var(--pink-600); font-size: .82rem; font-weight: 500; }
 .place__actions { display: flex; flex-wrap: wrap; gap: 14px; }
-.place__photo { grid-row: span 2; min-height: 100%; }
-.place__photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 35%; }
-.place__card { grid-template-columns: .85fr 1.15fr; }
-.place__map { min-height: 340px; }
-.place__map iframe { width: 100%; height: 100%; min-height: 340px; border: 0; display: block; filter: saturate(.85); }
 
 /* CTA */
 .cta { background: var(--pink-200); padding: 100px 0; text-align: center; position: relative; overflow: hidden; }
@@ -294,9 +300,8 @@ strong { font-weight: 600; color: var(--ink); }
   .category__media { max-width: 560px; }
   .steps__grid { grid-template-columns: repeat(2, 1fr); }
   .place__card { grid-template-columns: 1fr; }
-  .place__photo { grid-row: auto; }
-  .place__photo img { height: auto; aspect-ratio: 4 / 4.4; }
-  .place__map, .place__map iframe { min-height: 360px; }
+  .place__card { max-width: 620px; }
+  .place__photo { min-height: 0; aspect-ratio: 4 / 4.2; }
 }
 @media (max-width: 700px) {
   body { font-size: 16px; }
@@ -325,7 +330,10 @@ strong { font-weight: 600; color: var(--ink); }
   .gallery__grid figcaption { left: 10px; bottom: 10px; padding: 5px 11px; font-size: .6rem; letter-spacing: .12em; }
   .faq__list summary { font-size: 1.15rem; }
   .faq__list details p { padding-right: 0; }
-  .place__info { padding: 40px 28px; }
+  .place__info { padding: 40px 26px; }
+  .place__info h3 { font-size: 2rem; }
+  .place__item { gap: 16px; padding: 18px 0; }
+  .place__item svg { width: 42px; height: 42px; padding: 10px; }
   .place__actions .btn { flex: 1 1 100%; }
   .cta::before { font-size: 16rem; }
   .footer__inner { flex-direction: column; text-align: center; }
