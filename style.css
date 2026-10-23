@@ -325,7 +325,7 @@ strong { font-weight: 600; color: var(--ink); }
   .category--reverse .category__media::before { inset: 18px -14px -18px 14px; }
   .about__media { padding: 0 30px 60px 0; }
   .steps__grid { grid-template-columns: 1fr; }
-  .gallery__grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 170px; gap: 12px; }
+  .gallery__grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 210px; gap: 12px; }
   .gallery__grid .g5 { grid-column: span 2; }
   .gallery__grid figcaption { left: 10px; bottom: 10px; padding: 5px 11px; font-size: .6rem; letter-spacing: .12em; }
   .faq__list summary { font-size: 1.15rem; }
