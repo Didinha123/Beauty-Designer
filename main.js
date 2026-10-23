@@ -2,9 +2,9 @@ const header = document.getElementById('header');
 const nav = document.getElementById('nav');
 const toggle = document.getElementById('menuToggle');
 
-window.addEventListener('scroll', () => {
-  header.classList.toggle('scrolled', window.scrollY > 40);
-});
+const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 30);
+window.addEventListener('scroll', onScroll);
+onScroll();
 
 toggle.addEventListener('click', () => {
   nav.classList.toggle('open');
@@ -18,6 +18,7 @@ nav.querySelectorAll('a').forEach(link => {
   });
 });
 
+// Animação de entrada ao rolar
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -25,8 +26,17 @@ const observer = new IntersectionObserver(entries => {
       observer.unobserve(entry.target);
     }
   });
-}, { threshold: 0.12 });
+}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 
-document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+document.querySelectorAll('.reveal').forEach((el, i) => {
+  el.style.transitionDelay = `${(i % 4) * 0.08}s`;
+  observer.observe(el);
+});
+
+// Mantém só uma pergunta aberta por vez
+const faqs = document.querySelectorAll('.faq__list details');
+faqs.forEach(d => d.addEventListener('toggle', () => {
+  if (d.open) faqs.forEach(o => o !== d && (o.open = false));
+}));
 
 document.getElementById('year').textContent = new Date().getFullYear();
