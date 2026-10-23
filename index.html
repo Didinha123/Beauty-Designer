@@ -3,11 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cristhiellen Santos | Beauty Designer – Sobrancelhas e Cílios em Jundiaí</title>
-  <meta name="description" content="Design de sobrancelhas, brow lamination, henna, extensão de cílios e lash lifting em Jundiaí. Cristhiellen Santos Beauty Designer.">
+  <title>Cristhiellen Santos | Beauty Designer – Cílios e Sobrancelhas em Jundiaí</title>
+  <meta name="description" content="Extensão de cílios, lash lifting, design de sobrancelhas, henna e brow lamination em Jundiaí. Cristhiellen Santos Beauty Designer – agende pelo WhatsApp.">
+  <meta property="og:title" content="Cristhiellen Santos | Beauty Designer">
+  <meta property="og:description" content="Cílios e sobrancelhas com técnica, cuidado e resultado natural. Jundiaí – SP.">
+  <meta property="og:image" content="logo.webp">
+  <meta name="theme-color" content="#f4d3d6">
+  <link rel="icon" href="logo.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,44 +21,117 @@
   <!-- Cabeçalho -->
   <header class="header" id="header">
     <div class="container header__inner">
-      <a href="#inicio" class="brand">
-        <span class="brand__mono">CS</span>
-        <span class="brand__text">
+      <a href="#inicio" class="logo" aria-label="Cristhiellen Santos Beauty Designer">
+        <span class="logo__mono">CS</span>
+        <span class="logo__text">
           <strong>Cristhiellen Santos</strong>
           <small>Beauty Designer</small>
         </span>
       </a>
       <nav class="nav" id="nav">
-        <a href="#inicio">Início</a>
-        <a href="#sobre">Sobre</a>
         <a href="#servicos">Serviços</a>
-        <a href="#diferenciais">Diferenciais</a>
-        <a href="#depoimentos">Depoimentos</a>
-        <a href="#contato">Contato</a>
-        <a href="#contato" class="btn btn--small">Agendar</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#atendimento">Atendimento</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#duvidas">Dúvidas</a>
+        <a href="#espaco">Nosso espaço</a>
+        <a href="https://wa.me/5511971192744?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio!" target="_blank" rel="noopener" class="btn btn--sm">Agendar</a>
       </nav>
-      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
-        <span></span><span></span><span></span>
-      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
     </div>
   </header>
 
   <!-- Hero -->
   <section class="hero" id="inicio">
-    <div class="container hero__inner">
-      <div class="hero__content reveal">
-        <span class="eyebrow">Sobrancelhas &amp; Cílios</span>
-        <h1>Realce o que há de mais <em>belo</em> no seu olhar</h1>
-        <p>Design personalizado de sobrancelhas e cílios, pensado para valorizar a harmonia natural do seu rosto. Atendimento exclusivo em Jundiaí.</p>
-        <div class="hero__actions">
-          <a href="#contato" class="btn">Agende seu horário</a>
-          <a href="#servicos" class="btn btn--outline">Ver serviços</a>
-        </div>
+    <div class="hero__bg" style="background-image:url('https://images.unsplash.com/photo-1689237076071-2403d4123cee?w=1800&q=80&auto=format&fit=crop')"></div>
+    <div class="container hero__content">
+      <span class="kicker reveal">Cílios &amp; Sobrancelhas · Jundiaí</span>
+      <h1 class="reveal">A beleza que<br><em>vive no seu olhar.</em></h1>
+      <p class="reveal">Cílios e sobrancelhas desenhados sob medida, com técnica, delicadeza e cuidado com a saúde dos seus fios, para realçar a <strong>harmonia única do seu rosto</strong>.</p>
+      <div class="hero__actions reveal">
+        <a href="https://wa.me/5511971192744?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio!" target="_blank" rel="noopener" class="btn">
+          <svg viewBox="0 0 32 32" class="ico"><use href="#i-wpp"/></svg> Agendar horário
+        </a>
+        <a href="#servicos" class="btn btn--ghost">Conheça os serviços</a>
       </div>
-      <div class="hero__image reveal">
-        <div class="hero__frame">
-          <img src="logo.webp" alt="Logo Cristhiellen Santos Beauty Designer">
+    </div>
+    <a href="#servicos" class="hero__scroll" aria-label="Rolar para baixo"><span></span></a>
+  </section>
+
+  <!-- Faixa de destaques -->
+  <section class="strip">
+    <div class="container strip__inner">
+      <div><svg viewBox="0 0 24 24"><path d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z"/></svg><span>Atendimento exclusivo<br>com hora marcada</span></div>
+      <div><svg viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg><span>Materiais esterilizados<br>e descartáveis</span></div>
+      <div><svg viewBox="0 0 24 24"><path d="M12 21s-8-5-8-11a4.5 4.5 0 0 1 8-3 4.5 4.5 0 0 1 8 3c0 6-8 11-8 11z"/></svg><span>Técnicas que preservam<br>os fios naturais</span></div>
+      <div><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12a4 4 0 0 0 8 0"/><circle cx="9" cy="9.5" r=".6"/><circle cx="15" cy="9.5" r=".6"/></svg><span>Resultado natural<br>e personalizado</span></div>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section class="section" id="servicos">
+    <div class="container">
+      <header class="head reveal">
+        <span class="kicker">O que fazemos</span>
+        <h2>Conheça os nossos <em>serviços</em></h2>
+        <p>Cada procedimento começa com uma avaliação do seu rosto, dos seus fios e do efeito que você deseja.</p>
+      </header>
+
+      <!-- Cílios -->
+      <article class="category reveal">
+        <div class="category__media">
+          <img src="https://images.unsplash.com/photo-1589710751893-f9a6770ad71b?w=1000&q=80&auto=format&fit=crop" alt="Aplicação de extensão de cílios" loading="lazy">
+          <span class="category__tag">Cílios</span>
         </div>
+        <div class="category__body">
+          <h3>Cílios</h3>
+          <p class="category__lead">Do efeito mais natural ao mais marcante, com fios leves e aplicação que respeita a saúde dos seus cílios.</p>
+          <ul class="service-list">
+            <li><div><strong>Lash Lifting</strong><span>Curvatura e alongamento dos cílios naturais, sem extensão.</span></div></li>
+            <li><div><strong>Clássico Fio a Fio</strong><span>Um fio sintético por cílio natural. Efeito rímel, delicado.</span></div></li>
+            <li><div><strong>Volume Brasileiro</strong><span>Fios em formato de Y, mais preenchimento com leveza.</span></div></li>
+            <li><div><strong>Volume Egípcio</strong><span>Fios em W para um olhar cheio e marcante.</span></div></li>
+            <li><div><strong>Volume Russo / Híbrido</strong><span>Fans artesanais para máxima densidade e sofisticação.</span></div></li>
+            <li><div><strong>Manutenção e Remoção</strong><span>Reposição periódica e remoção segura da extensão.</span></div></li>
+          </ul>
+          <a href="https://wa.me/5511971192744?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20servi%C3%A7o%20de%20c%C3%ADlios!" target="_blank" rel="noopener" class="link-arrow">Agendar cílios</a>
+        </div>
+      </article>
+
+      <!-- Sobrancelhas -->
+      <article class="category category--reverse reveal">
+        <div class="category__media">
+          <img src="https://images.unsplash.com/photo-1718720410649-7524fcb0f0a5?w=1000&q=80&auto=format&fit=crop" alt="Design de sobrancelhas" loading="lazy">
+          <span class="category__tag">Sobrancelhas</span>
+        </div>
+        <div class="category__body">
+          <h3>Sobrancelhas</h3>
+          <p class="category__lead">Mapeamento facial e desenho sob medida para emoldurar o seu olhar com equilíbrio e naturalidade.</p>
+          <ul class="service-list">
+            <li><div><strong>Design Personalizado</strong><span>Visagismo e modelagem de acordo com as proporções do rosto.</span></div></li>
+            <li><div><strong>Design com Henna</strong><span>Preenche falhas e define o desenho com efeito sombreado.</span></div></li>
+            <li><div><strong>Design com Tintura</strong><span>Realça a cor dos fios com acabamento natural.</span></div></li>
+            <li><div><strong>Brow Lamination</strong><span>Fios alinhados, penteados e com aparência de mais volume.</span></div></li>
+            <li><div><strong>Reconstrução de Sobrancelhas</strong><span>Protocolo para recuperar falhas e estimular o crescimento.</span></div></li>
+          </ul>
+          <a href="https://wa.me/5511971192744?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20servi%C3%A7o%20de%20sobrancelhas!" target="_blank" rel="noopener" class="link-arrow">Agendar sobrancelhas</a>
+        </div>
+      </article>
+
+      <!-- Cards de destaque -->
+      <div class="highlights">
+        <figure class="highlight reveal">
+          <img src="https://images.unsplash.com/photo-1639629509821-c54cdd984227?w=700&q=80&auto=format&fit=crop" alt="Lash lifting" loading="lazy">
+          <figcaption><span>Mais procurado</span><strong>Lash Lifting</strong></figcaption>
+        </figure>
+        <figure class="highlight reveal">
+          <img src="https://images.unsplash.com/photo-1534143826428-81fc61582afd?w=700&q=80&auto=format&fit=crop" alt="Brow lamination" loading="lazy">
+          <figcaption><span>Tendência</span><strong>Brow Lamination</strong></figcaption>
+        </figure>
+        <figure class="highlight reveal">
+          <img src="https://images.unsplash.com/photo-1683719312734-e31de63957ab?w=700&q=80&auto=format&fit=crop" alt="Extensão de cílios volume" loading="lazy">
+          <figcaption><span>Olhar marcante</span><strong>Volume Russo</strong></figcaption>
+        </figure>
       </div>
     </div>
   </section>
@@ -60,228 +139,173 @@
   <!-- Sobre -->
   <section class="section about" id="sobre">
     <div class="container about__inner">
-      <div class="about__badge reveal">
-        <span class="about__mono">CS</span>
-        <p>Beleza com<br><em>propósito</em></p>
+      <div class="about__media reveal">
+        <img class="about__main" src="https://images.unsplash.com/photo-1772236617396-2f8460293c07?w=900&q=80&auto=format&fit=crop" alt="Beauty designer em atendimento" loading="lazy">
+        <img class="about__logo" src="logo.webp" alt="Logo Cristhiellen Santos Beauty Designer no espaço" loading="lazy">
       </div>
-      <div class="about__content reveal">
-        <span class="eyebrow">Sobre mim</span>
-        <h2>Olá, eu sou a Cristhiellen</h2>
-        <p>Sou beauty designer especializada em sobrancelhas e cílios. Acredito que cada rosto é único — por isso, cada atendimento começa com uma análise cuidadosa das suas proporções, do seu estilo e do resultado que você deseja.</p>
-        <p>Meu objetivo é que você saia do meu espaço se sentindo mais confiante, com um resultado natural, elegante e que combine com você.</p>
-        <ul class="about__list">
-          <li>Atendimento personalizado e humanizado</li>
-          <li>Produtos de alta qualidade</li>
-          <li>Ambiente aconchegante e higienizado</li>
-        </ul>
+      <div class="about__body reveal">
+        <span class="kicker">Quem cuida de você</span>
+        <h2>Prazer, eu sou a <em>Cristhiellen</em></h2>
+        <p>Sou beauty designer especializada em cílios e sobrancelhas. Para mim, cada atendimento é único: começo entendendo o seu estilo, a sua rotina e o resultado que você imagina, para criar um olhar que tenha a sua cara.</p>
+        <p>Trabalho com produtos de alta qualidade, protocolos rigorosos de biossegurança e técnicas que preservam a saúde dos seus fios naturais. Tudo isso em um espaço reservado e acolhedor, pensado para você relaxar.</p>
+        <div class="signature">Cristhiellen Santos</div>
       </div>
     </div>
   </section>
 
-  <!-- Serviços -->
-  <section class="section services" id="servicos">
+  <!-- Atendimento -->
+  <section class="section steps" id="atendimento">
     <div class="container">
-      <div class="section__head reveal">
-        <span class="eyebrow">Serviços</span>
-        <h2>Cuidados para o seu olhar</h2>
-        <p>Procedimentos pensados para realçar a sua beleza natural.</p>
-      </div>
-
-      <h3 class="services__group reveal">Sobrancelhas</h3>
-      <div class="cards">
-        <article class="card reveal">
-          <div class="card__icon">
-            <svg viewBox="0 0 48 48"><path d="M6 28c8-10 26-12 36-4" /><path d="M10 24c2-2 4-3 6-4M18 20c2-1 4-1 6-1M26 19c2 0 4 1 6 2" /></svg>
-          </div>
-          <h4>Design de Sobrancelhas</h4>
-          <p>Mapeamento facial e modelagem personalizada para um formato harmonioso e natural.</p>
-        </article>
-        <article class="card reveal">
-          <div class="card__icon">
-            <svg viewBox="0 0 48 48"><path d="M6 28c8-10 26-12 36-4" /><circle cx="36" cy="12" r="5" /><path d="M36 17v8" /></svg>
-          </div>
-          <h4>Design com Henna</h4>
-          <p>Preenche falhas e define o desenho com coloração temporária e efeito sombreado.</p>
-        </article>
-        <article class="card reveal">
-          <div class="card__icon">
-            <svg viewBox="0 0 48 48"><path d="M6 30c8-10 26-12 36-4" /><path d="M12 26l-2-8M18 23l-1-9M24 22v-9M30 22l1-9M36 24l2-8" /></svg>
-          </div>
-          <h4>Brow Lamination</h4>
-          <p>Alinha e disciplina os fios, deixando as sobrancelhas mais volumosas e penteadas.</p>
-        </article>
-        <article class="card reveal">
-          <div class="card__icon">
-            <svg viewBox="0 0 48 48"><path d="M6 28c8-10 26-12 36-4" /><path d="M14 36l20-20M30 14l4 4" /></svg>
-          </div>
-          <h4>Micropigmentação</h4>
-          <p>Técnica fio a fio ou shadow para sobrancelhas definidas por muito mais tempo.</p>
-        </article>
-      </div>
-
-      <h3 class="services__group reveal">Cílios</h3>
-      <div class="cards">
-        <article class="card reveal">
-          <div class="card__icon">
-            <svg viewBox="0 0 48 48"><path d="M6 22c10 10 26 10 36 0" /><path d="M12 27l-4 7M18 30l-2 8M24 31v8M30 30l2 8M36 27l4 7" /></svg>
-          </div>
-          <h4>Extensão de Cílios</h4>
-          <p>Fio a fio, volume brasileiro, egípcio ou russo — o olhar marcante que você sonha.</p>
-        </article>
-        <article class="card reveal">
-          <div class="card__icon">
-            <svg viewBox="0 0 48 48"><path d="M6 26c10 10 26 10 36 0" /><path d="M12 30c-2-6-1-12 2-16M24 34c0-8 1-14 3-18M36 30c2-6 1-12-2-16" /></svg>
-          </div>
-          <h4>Lash Lifting</h4>
-          <p>Curvatura e alongamento dos seus cílios naturais, sem extensão, por semanas.</p>
-        </article>
-        <article class="card reveal">
-          <div class="card__icon">
-            <svg viewBox="0 0 48 48"><path d="M6 22c10 10 26 10 36 0" /><path d="M24 6l2 5 5 1-4 3 1 5-4-3-4 3 1-5-4-3 5-1z" /></svg>
-          </div>
-          <h4>Manutenção</h4>
-          <p>Manutenção periódica da extensão para manter seus cílios sempre lindos e cheios.</p>
-        </article>
-        <article class="card reveal">
-          <div class="card__icon">
-            <svg viewBox="0 0 48 48"><path d="M24 40s-14-8-14-20a8 8 0 0 1 14-5 8 8 0 0 1 14 5c0 12-14 20-14 20z" /></svg>
-          </div>
-          <h4>Combo Olhar Perfeito</h4>
-          <p>Design de sobrancelhas + lash lifting em um único atendimento. Praticidade e resultado.</p>
-        </article>
-      </div>
+      <header class="head reveal">
+        <span class="kicker">Como funciona</span>
+        <h2>Uma experiência <em>do início ao fim</em></h2>
+      </header>
+      <ol class="steps__grid">
+        <li class="reveal"><span>01</span><h4>Agendamento</h4><p>Escolha o serviço e o melhor horário direto pelo WhatsApp.</p></li>
+        <li class="reveal"><span>02</span><h4>Avaliação</h4><p>Análise do rosto, dos fios e conversa sobre o efeito desejado.</p></li>
+        <li class="reveal"><span>03</span><h4>Procedimento</h4><p>Aplicação com calma, conforto e materiais esterilizados.</p></li>
+        <li class="reveal"><span>04</span><h4>Pós-cuidados</h4><p>Orientações para o resultado durar mais e ficar sempre lindo.</p></li>
+      </ol>
     </div>
   </section>
 
-  <!-- Diferenciais -->
-  <section class="section features" id="diferenciais">
+  <!-- Galeria -->
+  <section class="section gallery" id="galeria">
     <div class="container">
-      <div class="section__head reveal">
-        <span class="eyebrow">Por que me escolher</span>
-        <h2>Uma experiência pensada em você</h2>
+      <header class="head reveal">
+        <span class="kicker">Inspirações</span>
+        <h2>Olhares que <em>encantam</em></h2>
+      </header>
+      <div class="gallery__grid">
+        <img class="reveal g1" src="https://images.unsplash.com/photo-1548902378-2ec44c906391?w=800&q=80&auto=format&fit=crop" alt="Cílios naturais alongados" loading="lazy">
+        <img class="reveal" src="https://images.unsplash.com/photo-1542833807-ad5af0977050?w=600&q=80&auto=format&fit=crop" alt="Olhar com sobrancelha definida" loading="lazy">
+        <img class="reveal" src="https://images.unsplash.com/photo-1516220362602-dba5272034e7?w=600&q=80&auto=format&fit=crop" alt="Sobrancelha natural" loading="lazy">
+        <img class="reveal" src="https://images.unsplash.com/photo-1561505445-3d89277edf4c?w=600&q=80&auto=format&fit=crop" alt="Cílios curvados" loading="lazy">
+        <img class="reveal g5" src="https://images.unsplash.com/photo-1674049406467-824ea37c7184?w=800&q=80&auto=format&fit=crop" alt="Aplicação de cílios no estúdio" loading="lazy">
+        <img class="reveal" src="https://images.unsplash.com/photo-1770999086860-143f54adf01b?w=600&q=80&auto=format&fit=crop" alt="Materiais de extensão de cílios" loading="lazy">
       </div>
-      <div class="features__grid">
-        <div class="feature reveal">
-          <span class="feature__num">01</span>
-          <h4>Análise facial</h4>
-          <p>Cada procedimento começa com o estudo das proporções do seu rosto.</p>
-        </div>
-        <div class="feature reveal">
-          <span class="feature__num">02</span>
-          <h4>Resultado natural</h4>
-          <p>Técnicas que valorizam seus traços sem exageros.</p>
-        </div>
-        <div class="feature reveal">
-          <span class="feature__num">03</span>
-          <h4>Biossegurança</h4>
-          <p>Materiais esterilizados e descartáveis em todos os atendimentos.</p>
-        </div>
-        <div class="feature reveal">
-          <span class="feature__num">04</span>
-          <h4>Atendimento com hora marcada</h4>
-          <p>Sem espera: seu horário é exclusivamente seu.</p>
-        </div>
+      <div class="insta reveal">
+        <p>Acompanhe o nosso trabalho no Instagram</p>
+        <a href="https://instagram.com/" target="_blank" rel="noopener" class="btn">
+          <svg viewBox="0 0 24 24" class="ico ico--stroke"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8"/></svg>
+          @cristhiellensantos
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- Depoimentos -->
-  <section class="section testimonials" id="depoimentos">
+  <!-- Dúvidas -->
+  <section class="section faq" id="duvidas">
+    <div class="container faq__inner">
+      <header class="head head--left reveal">
+        <span class="kicker">Dúvidas frequentes</span>
+        <h2>Tudo o que você <em>precisa saber</em></h2>
+        <p>Ficou com alguma outra dúvida? Chame no WhatsApp, será um prazer ajudar.</p>
+        <a href="https://wa.me/5511971192744" target="_blank" rel="noopener" class="link-arrow">Falar com a Cristhiellen</a>
+      </header>
+      <div class="faq__list reveal">
+        <details open>
+          <summary>A extensão de cílios estraga os fios naturais?</summary>
+          <p>Não, quando feita com técnica e materiais adequados. A espessura e o peso dos fios são escolhidos de acordo com a força dos seus cílios naturais.</p>
+        </details>
+        <details>
+          <summary>Quanto tempo dura o lash lifting?</summary>
+          <p>Em média de 6 a 8 semanas, acompanhando o ciclo natural de crescimento dos cílios.</p>
+        </details>
+        <details>
+          <summary>De quanto em quanto tempo faço a manutenção?</summary>
+          <p>O ideal é a cada 15 a 21 dias, para repor os fios que caem naturalmente e manter o volume.</p>
+        </details>
+        <details>
+          <summary>Qual a diferença entre henna e brow lamination?</summary>
+          <p>A henna colore a pele e os fios, preenchendo falhas. O brow lamination alinha e fixa os fios na direção desejada, dando aspecto de mais volume. Os dois podem ser combinados.</p>
+        </details>
+        <details>
+          <summary>Preciso ir sem maquiagem?</summary>
+          <p>Sim, de preferência. Vir com a região dos olhos e sobrancelhas limpa ajuda na fixação e no resultado.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nosso espaço -->
+  <section class="section place" id="espaco">
     <div class="container">
-      <div class="section__head reveal">
-        <span class="eyebrow">Depoimentos</span>
-        <h2>O que dizem as clientes</h2>
-      </div>
-      <div class="testimonials__grid">
-        <blockquote class="testimonial reveal">
-          <div class="stars">★★★★★</div>
-          <p>“Minha sobrancelha nunca ficou tão bonita! A Cris é super cuidadosa e o resultado ficou muito natural.”</p>
-          <cite>— Cliente</cite>
-        </blockquote>
-        <blockquote class="testimonial reveal">
-          <div class="stars">★★★★★</div>
-          <p>“Fiz o lash lifting e amei. Ambiente lindo, atendimento impecável. Já virei cliente fiel!”</p>
-          <cite>— Cliente</cite>
-        </blockquote>
-        <blockquote class="testimonial reveal">
-          <div class="stars">★★★★★</div>
-          <p>“Profissional maravilhosa, pontual e muito atenciosa. Recomendo de olhos fechados.”</p>
-          <cite>— Cliente</cite>
-        </blockquote>
+      <header class="head reveal">
+        <span class="kicker">Venha nos visitar</span>
+        <h2>Nosso <em>espaço</em></h2>
+      </header>
+      <div class="place__card reveal">
+        <div class="place__info">
+          <h3>Unidade Jundiaí</h3>
+          <ul>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M12 22s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <span>Av. Eunice Cavalcante de Souza Queiroz, 1319 – Sala 1<br>Pq. Residencial Jundiaí, Jundiaí – SP<br><small>Em cima da BH Auto Center</small></span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+              <span><a href="https://wa.me/5511971192744" target="_blank" rel="noopener">(11) 97119-2744</a></span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              <span>Segunda a sábado · somente com hora marcada</span>
+            </li>
+          </ul>
+          <div class="place__actions">
+            <a href="https://wa.me/5511971192744?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio!" target="_blank" rel="noopener" class="btn">Faça o seu agendamento</a>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Av.+Eunice+Cavalcante+de+Souza+Queiroz,+1319+Jundia%C3%AD+SP" target="_blank" rel="noopener" class="btn btn--ghost">Como chegar</a>
+          </div>
+        </div>
+        <div class="place__map">
+          <iframe src="https://www.google.com/maps?q=Av.+Eunice+Cavalcante+de+Souza+Queiroz,+1319+-+Jundia%C3%AD+-+SP&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa – Cristhiellen Santos Beauty Designer"></iframe>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
+  <!-- CTA final -->
   <section class="cta">
     <div class="container cta__inner reveal">
-      <h2>Pronta para transformar o seu olhar?</h2>
-      <p>Agende agora mesmo pelo WhatsApp e garanta o seu horário.</p>
-      <a href="https://wa.me/5511971192744?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio!" target="_blank" rel="noopener" class="btn btn--light">Agendar pelo WhatsApp</a>
-    </div>
-  </section>
-
-  <!-- Contato -->
-  <section class="section contact" id="contato">
-    <div class="container contact__inner">
-      <div class="contact__info reveal">
-        <span class="eyebrow">Contato</span>
-        <h2>Venha me visitar</h2>
-        <div class="contact__item">
-          <svg viewBox="0 0 24 24"><path d="M12 22s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
-          <div>
-            <strong>Endereço</strong>
-            <p>Av. Eunice Cavalcante de Souza Queiroz, 1319 – Sala 1<br>Pq. Residencial Jundiaí – Jundiaí/SP<br><small>(em cima da BH Auto Center)</small></p>
-          </div>
-        </div>
-        <div class="contact__item">
-          <svg viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-3.5-6.6L20 4l-1 3.6A8 8 0 0 1 20 12z"/><path d="M9 9c0 3 3 6 6 6l1-1.5-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2z"/></svg>
-          <div>
-            <strong>WhatsApp</strong>
-            <p><a href="https://wa.me/5511971192744" target="_blank" rel="noopener">(11) 97119-2744</a></p>
-          </div>
-        </div>
-        <div class="contact__item">
-          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
-          <div>
-            <strong>Instagram</strong>
-            <p><a href="https://instagram.com/" target="_blank" rel="noopener">@cristhiellensantos</a></p>
-          </div>
-        </div>
-        <div class="contact__item">
-          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-          <div>
-            <strong>Horário</strong>
-            <p>Segunda a Sábado – com hora marcada</p>
-          </div>
-        </div>
-      </div>
-      <div class="contact__map reveal">
-        <iframe
-          src="https://www.google.com/maps?q=Av.+Eunice+Cavalcante+de+Souza+Queiroz,+1319+-+Jundia%C3%AD+-+SP&output=embed"
-          loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa de localização"></iframe>
-      </div>
+      <h2>Pronta para se <em>apaixonar</em> pelo seu olhar?</h2>
+      <a href="https://wa.me/5511971192744?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio!" target="_blank" rel="noopener" class="btn btn--dark">
+        <svg viewBox="0 0 32 32" class="ico"><use href="#i-wpp"/></svg> Agendar pelo WhatsApp
+      </a>
     </div>
   </section>
 
   <!-- Rodapé -->
   <footer class="footer">
     <div class="container footer__inner">
-      <div class="brand brand--footer">
-        <span class="brand__mono">CS</span>
-        <span class="brand__text">
-          <strong>Cristhiellen Santos</strong>
-          <small>Beauty Designer</small>
-        </span>
+      <a href="#inicio" class="logo logo--footer">
+        <span class="logo__mono">CS</span>
+        <span class="logo__text"><strong>Cristhiellen Santos</strong><small>Beauty Designer</small></span>
+      </a>
+      <nav class="footer__nav">
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#duvidas">Dúvidas</a>
+        <a href="#espaco">Nosso espaço</a>
+      </nav>
+      <div class="footer__social">
+        <a href="https://wa.me/5511971192744" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 32 32"><use href="#i-wpp"/></svg></a>
+        <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" class="ico--stroke"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8"/></svg></a>
       </div>
-      <p>© <span id="year"></span> Cristhiellen Santos Beauty Designer. Todos os direitos reservados.</p>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">© <span id="year"></span> Cristhiellen Santos Beauty Designer · Todos os direitos reservados.</div>
     </div>
   </footer>
 
-  <!-- Botão flutuante WhatsApp -->
-  <a href="https://wa.me/5511971192744?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio!" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Fale pelo WhatsApp">
-    <svg viewBox="0 0 32 32"><path fill="currentColor" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.7c-2 0-4-.6-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.7 10.7 0 1 1 16 26.7zm5.9-8c-.3-.2-1.9-1-2.2-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1a8.8 8.8 0 0 1-4.4-3.8c-.3-.6.3-.5 1-1.8.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.3 1.4 3.5c.2.2 2.4 3.7 5.8 5.2 2.2.9 3 1 4.1.8.7-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+  <!-- WhatsApp flutuante -->
+  <a href="https://wa.me/5511971192744?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio!" class="wpp-float" target="_blank" rel="noopener" aria-label="Agendar pelo WhatsApp">
+    <svg viewBox="0 0 32 32"><use href="#i-wpp"/></svg>
   </a>
+
+  <!-- Ícones -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-wpp" viewBox="0 0 32 32"><path fill="currentColor" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.7c-2 0-4-.6-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.7 10.7 0 1 1 16 26.7zm5.9-8c-.3-.2-1.9-1-2.2-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1a8.8 8.8 0 0 1-4.4-3.8c-.3-.6.3-.5 1-1.8.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.3 1.4 3.5c.2.2 2.4 3.7 5.8 5.2 2.2.9 3 1 4.1.8.7-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></symbol>
+  </svg>
 
   <script src="main.js"></script>
 </body>
