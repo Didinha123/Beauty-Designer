@@ -12,7 +12,6 @@
   <link rel="icon" href="logo.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://images.unsplash.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -43,8 +42,8 @@
 
   <!-- Hero -->
   <section class="hero" id="inicio">
-    <div class="hero__bg" style="background-image:url('https://images.unsplash.com/photo-1689237076071-2403d4123cee?w=1800&q=80&auto=format&fit=crop')"></div>
-    <div class="container hero__content">
+    <div class="container hero__inner">
+    <div class="hero__content">
       <span class="kicker reveal">Cílios &amp; Sobrancelhas · Jundiaí</span>
       <h1 class="reveal">A beleza que<br><em>vive no seu olhar.</em></h1>
       <p class="reveal">Cílios e sobrancelhas desenhados sob medida, com técnica, delicadeza e cuidado com a saúde dos seus fios, para realçar a <strong>harmonia única do seu rosto</strong>.</p>
@@ -54,6 +53,12 @@
         </a>
         <a href="#servicos" class="btn btn--ghost">Conheça os serviços</a>
       </div>
+    </div>
+    <div class="hero__media reveal">
+      <img class="hero__photo" src="cilios-volume.jpg" alt="Extensão de cílios volume feita por Cristhiellen Santos">
+      <img class="hero__photo hero__photo--small" src="lash-lifting.jpg" alt="Lash lifting e design de sobrancelhas">
+      <div class="hero__badge"><span>CS</span><small>Beauty<br>Designer</small></div>
+    </div>
     </div>
     <a href="#servicos" class="hero__scroll" aria-label="Rolar para baixo"><span></span></a>
   </section>
@@ -80,7 +85,7 @@
       <!-- Cílios -->
       <article class="category reveal">
         <div class="category__media">
-          <img src="https://images.unsplash.com/photo-1589710751893-f9a6770ad71b?w=1000&q=80&auto=format&fit=crop" alt="Aplicação de extensão de cílios" loading="lazy">
+          <img src="cilios-sobrancelhas.jpg" alt="Extensão de cílios e design de sobrancelhas" loading="lazy">
           <span class="category__tag">Cílios</span>
         </div>
         <div class="category__body">
@@ -101,7 +106,7 @@
       <!-- Sobrancelhas -->
       <article class="category category--reverse reveal">
         <div class="category__media">
-          <img src="https://images.unsplash.com/photo-1718720410649-7524fcb0f0a5?w=1000&q=80&auto=format&fit=crop" alt="Design de sobrancelhas" loading="lazy">
+          <img src="brow-lamination.jpg" alt="Brow lamination – sobrancelhas alinhadas" loading="lazy">
           <span class="category__tag">Sobrancelhas</span>
         </div>
         <div class="category__body">
@@ -117,22 +122,6 @@
           <a href="https://wa.me/5511971192744?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20servi%C3%A7o%20de%20sobrancelhas!" target="_blank" rel="noopener" class="link-arrow">Agendar sobrancelhas</a>
         </div>
       </article>
-
-      <!-- Cards de destaque -->
-      <div class="highlights">
-        <figure class="highlight reveal">
-          <img src="https://images.unsplash.com/photo-1639629509821-c54cdd984227?w=700&q=80&auto=format&fit=crop" alt="Lash lifting" loading="lazy">
-          <figcaption><span>Mais procurado</span><strong>Lash Lifting</strong></figcaption>
-        </figure>
-        <figure class="highlight reveal">
-          <img src="https://images.unsplash.com/photo-1534143826428-81fc61582afd?w=700&q=80&auto=format&fit=crop" alt="Brow lamination" loading="lazy">
-          <figcaption><span>Tendência</span><strong>Brow Lamination</strong></figcaption>
-        </figure>
-        <figure class="highlight reveal">
-          <img src="https://images.unsplash.com/photo-1683719312734-e31de63957ab?w=700&q=80&auto=format&fit=crop" alt="Extensão de cílios volume" loading="lazy">
-          <figcaption><span>Olhar marcante</span><strong>Volume Russo</strong></figcaption>
-        </figure>
-      </div>
     </div>
   </section>
 
@@ -140,7 +129,7 @@
   <section class="section about" id="sobre">
     <div class="container about__inner">
       <div class="about__media reveal">
-        <img class="about__main" src="https://images.unsplash.com/photo-1772236617396-2f8460293c07?w=900&q=80&auto=format&fit=crop" alt="Beauty designer em atendimento" loading="lazy">
+        <img class="about__main" src="cristhiellen.jpg" alt="Cristhiellen Santos, beauty designer" loading="lazy">
         <img class="about__logo" src="logo.webp" alt="Logo Cristhiellen Santos Beauty Designer no espaço" loading="lazy">
       </div>
       <div class="about__body reveal">
@@ -173,16 +162,15 @@
   <section class="section gallery" id="galeria">
     <div class="container">
       <header class="head reveal">
-        <span class="kicker">Inspirações</span>
-        <h2>Olhares que <em>encantam</em></h2>
+        <span class="kicker">Portfólio</span>
+        <h2>Resultados <em>reais</em></h2>
+        <p>Trabalhos feitos pela Cristhiellen no estúdio.</p>
       </header>
       <div class="gallery__grid">
-        <img class="reveal g1" src="https://images.unsplash.com/photo-1548902378-2ec44c906391?w=800&q=80&auto=format&fit=crop" alt="Cílios naturais alongados" loading="lazy">
-        <img class="reveal" src="https://images.unsplash.com/photo-1542833807-ad5af0977050?w=600&q=80&auto=format&fit=crop" alt="Olhar com sobrancelha definida" loading="lazy">
-        <img class="reveal" src="https://images.unsplash.com/photo-1516220362602-dba5272034e7?w=600&q=80&auto=format&fit=crop" alt="Sobrancelha natural" loading="lazy">
-        <img class="reveal" src="https://images.unsplash.com/photo-1561505445-3d89277edf4c?w=600&q=80&auto=format&fit=crop" alt="Cílios curvados" loading="lazy">
-        <img class="reveal g5" src="https://images.unsplash.com/photo-1674049406467-824ea37c7184?w=800&q=80&auto=format&fit=crop" alt="Aplicação de cílios no estúdio" loading="lazy">
-        <img class="reveal" src="https://images.unsplash.com/photo-1770999086860-143f54adf01b?w=600&q=80&auto=format&fit=crop" alt="Materiais de extensão de cílios" loading="lazy">
+        <figure class="reveal g1"><img src="cilios-volume.jpg" alt="Extensão de cílios volume" loading="lazy"><figcaption>Extensão de cílios</figcaption></figure>
+        <figure class="reveal"><img src="lash-lifting.jpg" alt="Lash lifting com design de sobrancelhas" loading="lazy"><figcaption>Lash lifting</figcaption></figure>
+        <figure class="reveal"><img src="brow-lamination.jpg" alt="Brow lamination" loading="lazy"><figcaption>Brow lamination</figcaption></figure>
+        <figure class="reveal g5"><img src="cilios-sobrancelhas.jpg" alt="Cílios volume e design de sobrancelhas" loading="lazy"><figcaption>Cílios + sobrancelhas</figcaption></figure>
       </div>
       <div class="insta reveal">
         <p>Acompanhe o nosso trabalho no Instagram</p>
